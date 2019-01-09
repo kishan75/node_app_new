@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    Result
+</head>
+
+<body>
+    <form action="/nameAge" method="GET">
+        <% if(Array.isArray(data))
+         {
+         %>
+        <ul>
+            <%
+             data.forEach(function(element)
+             {
+            %>
+            <li>
+                <%= element.name %>
+                <%= element.age  %>
+            </li>
+            <%
+             });
+         %>
+        </ul>
+        <%
+         }
+         else
+         {
+        %>
+        <%= data %>
+        <%
+         }
+         %>
+        </h1>
+        <input type="submit" value="ok">
+    </form>
+</body>
+
+</html>

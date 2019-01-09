@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+  <p> create</p>
+  <form action="/nameAge/create" method="POST">
+    name<input type="text" name="name"><br>
+    age<input type="text" name="age"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p> get all </p>
+  <form action="/nameAge/all" method="GET">
+    <input type="submit" value="Submit"> <br>
+  </form>
+  <p> get by name </p>
+  <form action="/nameAge/byName" method="GET">
+    name<input type="text" name="name"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p> get by age </p>
+  <form action="/nameAge/byAge" method="GET">
+    age<input type="text" name="age"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p> update age </p>
+  <form action="/nameAge/updateAge" method="POST">
+    name<input type="text" name="name"><br>
+    oldAge<input type="text" name="oldAge"><br>
+    newAge<input type="text" name="newAge"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p> update name </p>
+  <form action="/nameAge/updateName" method="POST">
+    age<input type="text" name="age"><br>
+    oldName<input type="text" name="oldName"><br>
+    newName<input type="text" name="newName"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p> delete</p>
+  <form action="/nameAge/delete" method="POST">
+    name<input type="text" name="name"><br>
+    age<input type="text" name="age"><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+
+</html>
